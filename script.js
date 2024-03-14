@@ -97,5 +97,5 @@ function calcularPesoCorporal(){
     var peso = parseFloat(pesoInput.value);
 
     var resultado = peso * pesoCorpo
-    resul.innerHTML ='Você precisa consumir ' + resultado + ' gramas de proteínas por dias! '
+    resul.innerHTML ='O ideal é você consumir apenas ' + resultado + ' gramas de proteínas por dias! '
 }
