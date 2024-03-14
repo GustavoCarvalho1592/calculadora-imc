@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porcentagem de Gordura</title>
+    <link rel="stylesheet" href="estilo.css">                                                 
+</head>
+<body onload="calcularIMC()">
+    <header>
+        <h1>Verificador de IMC</h1>
+    </header>
+    <section>
+        <div>
+            
+        <p>Ano de Nascimento:
+            <input type="number" name="txtano" id="txtano" min="0">
+        </p>
+            
+        <p>Sexo:
+             <input type="radio" name="radsex" id="mas" checked>
+             <label for="mas">Masculino</label>
+             <input type="radio" name="radsex" id="fem">
+             <label for="fem">Feminino</label>
+        </p>
+
+        <p>Digite seu peso:
+            <input type="number" name="peso" id="peso" min="0">
+        </p>
+            
+            
+        <p>Digite sua altura:
+            <input type="number" name="altura" id="altura" min="0">
+        </p>
+                
+        <p>
+            <input type="button" value="Verificar" onclick="verificar(); calcularIMC(); calcularPesoCorporal();">    
+        </p>
+        
+        </div>
+            
+        <div id ="res">
+
+        </div>
+
+        <div id = "ress">
+
+        </div>
+
+        <div id = "resul">
+
+        </div>
+    </section>
+   
+    <script src="script.js"></script>
+
+</body>
+</html>
